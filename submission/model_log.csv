@@ -1,1 +1,5 @@
 run_id,part,model,params,split,n_boxes,sec_per_img,what_went_right,what_went_wrong,decision
+r01,part2,yolo26-n,conf=0.25,pilot,148,0.38,bat rat tot va day du person motorbike car o gan,goi nham xe tuk-tuk la car o img_017 va co box thua o vung phuc tap,dung lam detector co ban cho 6 lop COCO
+r02,part2,yolo26-n,conf=0.50,pilot,81,0.28,cac box con lai rat chac chan giam han box thua,sot nhieu nguoi va xe may o xa tai img_011 va img_016,khong dung mot nguong 0.5 cho moi lop vi recall thap
+r03,part2,yoloe-s,classes=three_wheeler,pilot,8,0.30,tim dung xe tuk-tuk o img_013 va img_017 ma yolo bi mu,box hoi long va chua phat hien duoc xe xich lo o goc xa,dung de bo sung rieng cho lop three_wheeler
+r04,part2,yolo26-n+sam(mobile_sam.pt),conf=0.3,custom,8,2.04,tao mask vien rat net va om sat cho oto va nguoi,mask xe tuk-tuk bi dinh nguoi lai xe va loi lan truyen mang nhan car sai,dung de tao mask chi tiet cho cac vat quan trong
